@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+        <!-- Estilos-->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- SEO-->
+        <meta name="description" content="El Club A. 9 de Julio, es el club mas popular de la ciudad de Rafaela, provincia de Santa Fe. Juega actualmente en el Torneo Regional, se ubica en la calle Ayacucho 309.">
+        <meta name="keywords" content="9 de julio, club, rafaela, el mejor club">
+        <meta name="author" content="nombre de">
+        <meta name="copyright" content="nombre de">
+
+        <title>Club A. 9 de Julio</title>
+    </head>
+    
+    <body>
+        
+        <!-- Menu-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid"> <!-- para que sea responsivo se crea este container fluid-->
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="escudo" class="escudo" class="box2 box"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                            HOME
+                            </a>
+                            <!--<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>-->
+                        </li>
+                        <a class="nav-link" href="#noticias" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                            NOTICIAS
+                        </a>
+                        <a class="nav-link" href="#elclub" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                            EL CLUB
+                        </a>
+                        <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            DEPORTES 
+                            // el dropdown-toggle le da al menu la flecha para que baje al sub menu
+                            // el data-bs-toggle="dropdown" hace que baje como un landigPage
+                        </a>-->
+                        <a class="nav-link" href="#deportes" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                            DEPORTES
+                        </a>
+                        <a class="nav-link" href="#socios" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                            SOCIOS
+                        </a>
+                        <a class="nav-link" href="#contacto" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                            CONTACTO
+                        </a>
+                    </ul>
+                </div>
+                <a class="navbar-brand" href="#"><img src="images/carrito.png" alt="escudo" class="logos"></a>
+                <a class="navbar-brand" href="#"><img src="images/login.png" alt="escudo" class="logos"></a>
+            </div>
+        </nav>
+        <!-- Fin Menu-->
+
+        <!-- header . Slider -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active">hola</li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1">hola dos</li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2">hola tres</li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slider-1.png" class="d-block w-100" alt="primerSlider">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>¡Sumamos una NUEVA DISCIPLINA!</h5>
+                        <p>FORMACIÓN ARTISTICA Y DE CIRCO
+                            A partir de los 4 años
+                            Para más informacion acercarse a Secretaría de 8 a 20 hs. 
+                            O comunicarse con los profes:
+                            Belen (niños): 3492-311199
+                            Victor (adultos): 3492647654</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-2.png" class="d-block w-100" alt="hola">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bingo</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-3.jpg" class="d-block w-100" alt="hola">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>El leon vuelve</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <!-- fin Slider-->
+        
+        <!-- Socios -->
+        <section id="socios" class="socios"> <!-- Beneficios para los socios-->
+            <div class="container">
+                <div class="row">
+                <h2>Beneficios para socios</h2>
+                <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                        <h2>Unica entrada.</h2>
+                        <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                <div class="p-2 bd-highlight">
+                    <h2>Descuentos en prendas.</h2>
+                    <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="p-2 bd-highlight">
+                    <h2>Algo mas.</h2>
+                    <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+                </div>  
+            </div>  
+           
+            <!-- Si no lo sos insentivarlos mediante un boton / que luego conste de algun form
+            y formas de pago, adhiriendo a debito automatico y distintos pagos-->
+            <button type="button" class="btn ">
+                <a href="/socios.html" target="_blank" rel="noopener noreferrer">Adherite</a>
+            </button>
+        </section>
+        <!-- Fin Socios -->
+        
+        <!-- Proximo partido-->
+        <section class="proximoPartido"> <!-- Seccion de proximno partido, y que muestre el anterior y los proximos dos estilo carrusel-->
+            <h2>Proximos partidos</h2>
+            <img src="img/bingo 50.png" alt="Proximos partidos">
+        </section>
+        <!-- Fin proximo partido-->
+
+        <!-- Mas noticias-->
+        <section id="noticias" class="photo-grid-container">
+            <h2>Mas Noticias</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <!-- Se borra el style que tenia porq le asignaba un ancho y rompía todo! lo hice en todas las cards-->
+                        <div class="card"> 
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">  
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!-- cierre del row--> <!-- ES DECIR QUE ACÁ, CIERRA TU PRIMER FILA DE 3 CARDS !!! -->
+                <br> <br> <br> <!-- le agrego esto para separar, lo hago así porq es más fácil pero deberías hacerlo con css usando MARGIN -->
+        
+                <!-- acá abrimos otra fila donde tmb va a tener 3 cards, te va a ir quedando armada la grilla -->
+                <div class="row">
+                    <div class="col-4 col-s-12">
+                        <div class="card">
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-s-12">
+                        <div class="card">
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-s-12">
+                        <div class="card">
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!-- cierra el row de de la 2da fila de cards-->
+            </div> <!-- cierre del container-->
+        </section> <!-- cierre del section noticias-->
+        <!-- Fin Noticias -->
+
+        <!-- Deporte -->
+        <section id="deportes" class="actualidad"> <!-- Noticias destacadas de todas las actividades y relevantes del club tambien estilo carrusel-->
+            <h2>Actualidad</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <!-- Se borra el style que tenia porq le asignaba un ancho y rompía todo! lo hice en todas las cards-->
+                        <div class="card"> 
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">  
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+        </section>
+        <!-- Fin Deporte -->
+
+        <!-- El Club -->
+        <div class="elclub">
+            <section id="elclub">
+                <h2>El club</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card with stretched link</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <!-- Se borra el style que tenia porq le asignaba un ancho y rompía todo! lo hice en todas las cards-->
+                            <div class="card"> 
+                                <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card with stretched link</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">  
+                                <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card with stretched link</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+            </section>
+        </div>
+        <!-- Fin el Club -->
+
+        <!-- Galeria img -->
+        <section class="galeria"> 
+            <h2>Galeria de imagenes</h2>
+            <!-- Galeria de imagenes, con solo el titulo dentro de esta y una breve descripcion al pasar el mouse, 
+            tambien estilo carrusel distinto a los anteriores y que cada uno lleve a una pagina distanta para ver todas las fotos-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <!-- Se borra el style que tenia porq le asignaba un ancho y rompía todo! lo hice en todas las cards-->
+                        <div class="card"> 
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">  
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card with stretched link</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <!-- Se borra el style que tenia porq le asignaba un ancho y rompía todo! lo hice en todas las cards-->
+                            <div class="card"> 
+                                <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card with stretched link</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">  
+                                <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card with stretched link</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+        </section>
+        <!-- Fin Galeria img -->
+        
+        <!-- ultimos Twist -->
+        <section class="twitts"> <!-- Impactar los ultimos twitts de twitter-->
+            <h2>Ultimos tweets</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <!-- Se borra el style que tenia porq le asignaba un ancho y rompía todo! lo hice en todas las cards-->
+                        <div class="card"> 
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">  
+                            <img src="images/slider-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with stretched link</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary stretched-link">VER MAS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+        </section>
+        <!-- Fin ultimos Twist -->
+        
+        <!-- Contacto-->
+        <section id="contacto" class="contacto">
+            <h1>Form Contacto</h1>
+            <form action=""></form>
+        </section>
+        <!-- Fin Contacto -->
+
+        <!-- footer-->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        
+            <div id="container">
+                <div id="part1">
+                    <div id="companyinfo"> <a id="sitelink" href="#">BBbootstrap</a>
+                        <p id="title">Cool and Perfect Snippet code</p>
+                        <p id="detail">We create awesome code snippets that will help you in creating your own beautiful site. </p>
+                    </div>
+                    <div id="explore">
+                        <p id="txt1">Explore</p> <a class="link" href="#">Home</a> <a class="link" href="#">About</a> <a class="link" href="#">Snippet</a> <a class="link" href="#">Careers</a>
+                    </div>
+                    <div id="visit">
+                        <p id="txt2">Visit</p>
+                        <p class="text">Lincoln House </p>
+                        <p class="text">78 Bhulabhai Desai Road </p>
+                        <p class="text">Mumbai 400 026 </p>
+                        <p class="text">Phone: (22) 2363-3611 </p>
+                        <p class="text">Fax: (22) 2363-0350 </p>
+                    </div>
+                    <div id="legal">
+                        <p id="txt3">Legal</p> <a class="link1" href="#">Terms and Conditions</a> <a class="link1" href="#">Private Policy</a>
+                    </div>
+                </div>
+                <div id="part2">
+                    <p id="txt6"><i class="material-icons tiny"> copyright</i>copyright 2019 BBbootstrap - All right reserved</p>
+                </div>
+            </div>-->
+        
+        
+        
+        <!--
+        <section class="footerMain"> 
+            <footer class="footer">
+                <div class="footer-item footer-one">
+                    <img src="images/logo.png" alt="escudo" class="escudo">
+                    <h6>Ayacucho 309 - S2300DVQ <br> Rafaela, Santa Fe, Argentina. <br>
+                        Tel. (03492) 42-2971 / info@.com.ar</h6>
+                </div>
+                <div class="footer-item footer-two">
+                    <h2>Como llegar</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.009443700733!2d-61.49986588516347!3d-31.248161895261106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae3c4e30e021%3A0x56b28c02d1ad0d21!2sClub%209%20de%20Julio!5e0!3m2!1ses-419!2sar!4v1610835510345!5m2!1ses-419!2sar" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>             
+                </div>
+                <div class="footer-item footer-three"> 
+                    <h2>Nuestras Redes</h2>
+                    <a href="https://www.facebook.com/club9dejuliooficial" target="_blank" rel="noopener noreferrer">
+                        <img src="images/facebook.png" alt="facebook" class="redes">
+                    </a>
+                    <a href="https://twitter.com/9dejuliooficial" target="_blank" rel="noopener noreferrer">
+                        <img src="images/twitter.png" alt="Twitter" class="redes">
+                    </a>
+                    <a href="https://www.instagram.com/club9dejuliooficial" target="_blank" rel="noopener noreferrer">
+                        <img src="images/logotipo-de-instagram.png" alt="Instagram" class="redes">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="images/logotipo-de-youtube.png" alt="Youtube" class="redes">
+                    </a>
+                    <a href="https://web.whatsapp.com/15413180" target="_blank" rel="noopener noreferrer">
+                        <img src="images/whatsapp.png" alt="Whathsapp" class="redes">
+                    </a>
+                </div>  
+            </footer>
+        </section>-->
+            
+        <footer class="probando">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+                <!-- Footer links -->
+                <div class="row text-center text-md-left mt-3 pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <br>
+                        <br>
+                        <br>
+                    <img src="images/logo.png" alt=""width="280px" height="90px">
+                    <p></p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <div class="title">El Club</div>
+                    <p class="externo">
+                        <div class="prob02">
+                        Somos un club que trabaja dia a dia para que lo socios del club puedan dusfrutar de la comodidad de esta institucion.
+                        </div>
+                    </p>
+    
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <div class="title">Ir a</div>
+                        <p class="externo"> 
+                        <div class="prob02">
+                            <a href="noticias.html">noticias</a>
+                            <br>      
+                            <a href="carrito.html">carrito</a>
+                            <br>        
+                            <a href="etc">otro</a>
+                            <br>
+                            <a href="etc">otro</a>
+                            <br>
+                            <a href="etc">otro</a>
+                            </p>  
+                        </div>
+                </div>
+               
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="title">Contactanos</div>
+                    <p class="externo"><div class="prob02">
+                    Ayacucho 309 <br>
+                    mail <br>
+                    telefonos <br>
+                    telefonos</div>
+                    <br>
+                    </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Footer links -->
+        
+            <!-- Grid row -->
+                <div class="row d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8">
+                    <!--Copyright-->
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+                </div>
+            <!-- Footer Links -->
+            </div>
+        </footer>
+
+        <!-- fin footer-->
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
