@@ -5,7 +5,7 @@
 
 /* ------------------------------------------------ Body ------------------------------------------------ */
 .body {
-    background-color: #d01125!important;
+    background-color: #d01125f0!important;
 }
 
 /* ------------------------------------------------ Menu ------------------------------------------------ */
@@ -15,7 +15,9 @@
 
 /* centra el menu */
 .navbar-collapse {
-    padding-left: 400px;
+    /* padding-left: 400px; */
+    display: flex;
+    justify-content: center;
 }
 
 /* alto y centrado de logos del menu */
@@ -39,336 +41,141 @@
 
 /* ------------------------------------------------ Socios ------------------------------------------------ */
     /*transicion boton socios*/
-.btn {
+.btn-socios {
+    border-radius: 5px;
+    /* height: 40px;
+    margin: 0 50%;
+    width: 80px; */
+    transition: all 1s;
+    background-color: #ffffff;
+    
+}
+
+.btn-socios:hover {
+    transform: scale(1.2);
+    background-color: #d01226;
+}
+
+/*.btn {
     border-radius: 5px;
     height: 40px;
     margin: 0 50%;
     width: 80px;
     transition: all 1s;
-    background-color: #ffffff;
-    
+    background-color: #808080;
 }
 
 .btn:hover {
     transform: scale(1.2);
     background-color: #d01125;
     
-}
-    /*fin transicion*/
+}*/
+/*fin transicion*/
 
-.socios, .photo-grid-container, .elclub, .twitts {
+
+.socios {
+    color: #fbf7f7;
+    text-align: center;
+    background-color: #1d1d1d;
+    margin: 0px;
+}
+
+.twitts {
+    color: #fbf7f7;
+    text-align: center;
+    background-color: #1d1d1d;
+    margin: -24px;
+}
+
+/* Noticias */
+.photo-grid-container {
     color: #0c0c0c;
     text-align: center;
-    background-color: #d01125;
+    background-color: #ebebebeb;
+    margin: -24px;
 }
 
-.proximoPartido, .actualidad, .galeria, .contacto {
+/* Section Proximo partido*/
+.proximoPartido {
+    text-align: center;
+    background-color: #d01125f0;
+    /*height: 15em;*/
+    margin: -16px;
+}
+
+/* Section*/
+.actualidad, .galeria {
     color: #030303;
     text-align: center;
+    background-color: #d01125f0;
+    image-resolution: ;
 }
 
 
-/* ------------------------------------------------ Footer ------------------------------------------------ */
-/*.footer {
-    display: flex;
-    justify-content: space-between;
-}
-.footer.Main {
-    display: flex;
-    /*justify-content: space-between;*/
-/*}
 
-.footer-item {
-    color: #ffffff;
+/* Contacto*/
+.contacto {
+    color: #030303;
+    text-align: center;
+    background-color: #cecdbf;
+}
+
+/* El club*/
+.elclub {
+    color: #030303;
+    text-align: center;
+    /*background-color: #1d1d1d;*/
+    background-image: url(../Club9deJulio/images/frente1.png);
+    /*background-size: contain;*/
+    background-position: bottom;
+    background-attachment: fixed;
+    margin: -40px;    
+    
+
+}
+
+/*test card*/
+.card-image > img {
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+  }
+  .card-image > img:hover {
+    transform: scale(1.2) rotate(5deg);
+  }
+  .card-image {
+    overflow: hidden;
+    position: relative;
+    height: 30%;
+  }
+
+
+
+
+/* Btn primary */
+
+.btn-primary {
     background-color: #d01125;
-    height: 20;
-    /* define el ancho de los elementos dentro de su contenedor */
-    /*flex: 1;
+    border-color: #d01125;
 }
 
-.footer-two {
-    flex: 2;
-    text-align: center;
-}
+.carousel {
+    height: 500px;
+  }
 
-.footer-three, .redes {
-    text-align: center;
-    width: 40px;
-}
-*/
+.carousel img {
+    height: 500px;
+    object-fit: cover;
+  }
 
-/*nuevo footer a prueba*/
-/*#container {
-    width: 100%;
-    height: 330px
-}
-
-#part1 {
-    width: 100%;
-    height: 280px;
-    background-color: #292929
-}
-
-#part2 {
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    position: relative;
-    top: -15px
-}
-
-#companyinfo {
-    width: 14%;
-    height: 280px;
-    position: relative;
-    left: 8%;
-    top: 30px
-}
-
-#sitelink {
-    /*font-size: 35px;*/
-  /*  color: #f44336
-}
-
-#sitelink:hover {
-    color: #e65100
-}
-
-#title {
-    color: gray;
-    position: relative;
-    top: 0px;
-    /*font-size: 14.1px*/
-/*}
-
-#detail {
-    color: #aaa7a7;
-    /*font-size: 16px*/
-/*}
-
-#explore {
-    width: 14%;
-    height: 280px;
-    position: relative;
-    top: -235px;
-    left: 29%
-}
-
-#txt1,
-#txt2,
-#txt3,
-#txt4,
-#txt5 {
-    color: white;
-    /*font-size: 20px*/
-/*}
-
-.link {
-    display: flex;
-    width: 90px;
-    height: 40px;
-    color: #aaa7a7;
-    background-color: transparent;
-    border-top: 2px solid white;
-    position: relative;
-    top: -10px
-}
-
-.link:hover,
-.link1:hover {
-    color: #e65100
-}
-
-#visit {
-    width: 14%;
-    height: 280px;
-    position: relative;
-    top: -515px;
-    left: 42%
-}
-
-.text {
-    color: #aaa7a7;
-    /*font-size: 14px;*/
-  /*  margin-top: -10px
-}
-
-#legal {
-    width: 14%;
-    height: 280px;
-    position: relative;
-    top: -800px;
-    left: 59.5%
-}
-
-.link1 {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    color: #aaa7a7;
-    background-color: transparent;
-    border-top: 2px solid white;
-    position: relative;
-    top: -10px;
-    margin-top: 7px
-}
-
-#subscribe {
-    position: relative;
-    top: -1080px;
-    left: 78%;
-    width: 14%;
-    height: 280px
-}
-
-#email {
-    color: white;
-    position: relative;
-    top: -20px
-}
-
-.btn {
-    position: relative;
-    top: -10px
-}
-
-#txt5 {
-    position: relative;
-    top: 0px
-}
-
-.social {
-    position: relative;
-    top: -5px;
-    margin-right: 10px;
-    color: white;
-    cursor: pointer
-}
-
-.fa-facebook-square:hover {
-    color: #3B579D
-}
-
-.fa-linkedin:hover {
-    color: #007BB6
-}
-
-.fa-twitter-square:hover {
-    color: #2CAAE1
-}
-
-#txt6 {
-    color: white;
-    position: relative;
-    top: 13px;
-    left: 8%;
-    width: 80%;
-    color: #aaa7a7
-}
-
-.material-icons {
-    position: relative;
-    top: 3px
-}
-
-@media only screen and (max-width:1000px) {
-    #companyinfo {
-        width: 20%
-    }
-
-    #sitelink {
-        /*font-size: 15px*/
-    /*}
-
-    #txt5,
-    #txt4 {
-        /*font-size: 5px*/
-    /*}
-
-    #txt5,
-    .social {
-        position: relative;
-        top: -5px
-    }
-}
-
-@media only screen and (max-width:850px) {
-    #companyinfo {
-        position: relative;
-        left: 1%
-    }
-
-    #txt6 {
-        position: relative;
-        left: 1%
-    }
-
-    #txt1,
-    #txt2,
-    #txt3,
-    #txt4,
-    #txt5 {
-        /*font-size: 5px*/
-    /*}
-
-    #explore {
-        position: relative;
-        top: -240px;
-        left: 26%
-    }
-
-    #sitelink {
-        /*font-size: 10px*/
-    /*}
-
-    /*#detail {
-        /*font-size: 13px*/
-    /*}
-
-    .link {
-        width: 60px
-    }
-
-    #visit {
-        position: relative;
-        top: -520px;
-        left: 37%
-    }
-
-    .text {
-        /*font-size: 13px*/
-    /*}
-
-/*    #legal {
-        position: relative;
-        top: -800px;
-        left: 54%
-    }
-
-    #txt5,
-    .social {
-        position: relative;
-        left: -110%;
-        top: px
-    }
-
-    #email,
-    .btn {
-        position: relative;
-        top: 0px
-    }
-
-    #part1 {
-        height: 250px
-    }
-}
-*/
+  /* ------------------------------------------------ Footer ------------------------------------------------ */
 
 /* esto no lo entiendo porque me hace eso*/
 footer.probando {
-    background-color: dimgray;
+    color: #fbf7f7;
+    background-color: #1d1d1d;
+    margin: -16px;
 }
 
-.probando {
-    background-color: dimgray;
-}
+/*.probando {
+    background-color: #cecdbf;
+}*/
