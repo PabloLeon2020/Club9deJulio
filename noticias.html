@@ -1,19 +1,398 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
-</head>
-<body>
-    <h1>Todas las noticias aqui</h1>
-    
-    <audio src="">Audio</audio>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <!-- Estilos-->
+        <link rel="stylesheet" href="style.css">
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jOUBJrN8vk0?start=5" 
-        frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+        <!-- SEO-->
+        <meta name="description" content="El Club A. 9 de Julio, es el club mas popular de la ciudad de Rafaela, provincia de Santa Fe. Juega actualmente en el Torneo Regional, se ubica en la calle Ayacucho 309.">
+        <meta name="keywords" content="9 de julio, club, rafaela, el mejor club">
+        <meta name="author" content="Pablo Saracco">
+        <meta name="copyright" content="Club 9 de julio">
+
+        <title>Club A. 9 de Julio</title>
+    </head>
+<body>
+    <!-- Menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="images/logo.png" alt="escudo" class="escudo img-fluid"> <!-- Img-fluid ajusta la imagen al tamaño-->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <a class="nav-link" href="./index.html" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                    HOME
+                    </a>
+                    <a class="nav-link" href="#noticias" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                        NOTICIAS
+                    </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EL CLUB
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                            <li><a class="dropdown-item" href="#">Estatuto</a></li>
+                            <li><a class="dropdown-item" href="#">Autoridades</a></li>
+                            <li><a class="dropdown-item" href="#">Departamento</a></li>
+                            <li><a class="dropdown-item" href="#">Instalaciones</a></li>
+                        </ul>
+                    </li>
+                        <!-- El dropdown-toggle le da al menu la flecha para que baje al sub menu 
+                        // el data-bs-toggle="dropdown" hace que baje como un landigPage-->
+                    <a class="nav-link" href="./deportes.html" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                        DEPORTES
+                    </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#socios" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SOCIOS
+                        </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Oficina de Socios</a></li>
+                                <li><a class="dropdown-item" href="#">Socios Leon</a></li>
+                                <li><a class="dropdown-item" href="#">Adherite al Débito Automático</a></li>
+                                <li><a class="dropdown-item" href="#">Paga tus cuotas</a></li>
+                                <li><a class="dropdown-item" href="#">Beneficios</a></li>
+                                <li><a class="dropdown-item" href="#">Hacete Socio</a></li>
+                            </ul>
+                    </li>
+                    <a class="nav-link" href="#contacto" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                        CONTACTO
+                    </a>
+                    <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                        LOGIN
+                    </a>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#"><img src="images/carrito.png" alt="escudo" class="logos"></a>
+        </div>
+    </nav>
+    <!-- Fin Menu-->
+    
+    <!-- Beneficios-->
+    <section id="socios" class="socios"> <!-- Beneficios para los socios-->
+        <div class="container conTenedor">
+            <h2 class="Soloh2">Adherite y conoce los Beneficios que tenemos para vos<span>&#160;</span></h2>
+            <div class="row  pb-3">
+            <!--    <div class="col-sm-12 col-md-4 p-2">
+                    <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm-12 col-md-4 p-2">
+                    <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm-12 col-md-4 p-2">
+                    <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+                </div>
+                -->
+                <div class="row d-flex justify-content-center my-2">
+                    <div class="col-sm-2">
+                        <a href="./socios.html" class="btn btn-socios" rel="noopener noreferrer">Adherite</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ver si va este div-->
+    </section>
+    <!-- Fin Beneficios-->
+    
+    <!-- Proximo partido-->
+    <section class="proximoPartido"> 
+        <div class="container">
+            <div class="row  pb-3">
+                <div class="col-sm-12 col-md-4 p-2">
+                    <img src="images/partido1.png" class="imgPartido imgTes" alt="Responsive image">
+                </div>
+                <div class="col-sm-12 col-md-4 p-2">
+                    <img src="images/partido2.png" class="imgPartido imgTes" alt="Responsive image">
+                </div>
+                <div class="col-sm-12 col-md-4 p-2">
+                    <img src="images/partido3.png" class="imgPartido imgTes" alt="Responsive image">
+                </div>
+            </div>
+        </div>            
+    </section>
+    <!-- Fin proximo partido-->
+
+    <!-- Mas noticias-->
+    <section id="elclub" class="elclub">
+        <!--si queremos cambiar el fondo le tememos que cambiar el ID y
+        agregar una clase y estilo nuevo (ya que toma la del section club)-->
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/noticia1.png" class="card-img-top" alt="Intendente de Rafaela">
+                        <div class="card-body">
+                            <h5 class="card-title">Luis Castellano, en el Club</h5>
+                            <p class="card-text">En la mañana de este Martes, recibimos al Intendente de la Ciudad
+                                ...</p>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#castellano">Ver Mas...</button>
+                            <div id="castellano" class="collapse">
+                                En la mañana de este Martes, recibimos al Intendente de la Ciudad, Luis Castellano 
+                                y al Secretario de Deportes, Ignacio Podio, para contarle todos los proyectos que tiene nuestra 
+                                institución para este año.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/noticia2.png" class="card-img-top" alt="Intendente de Rafaela">
+                        <div class="card-body">
+                            <h5 class="card-title">Fixture Juliense</h5>
+                            <p class="card-text">Este Martes se sorteo el Fixture de la liga rafaelina en donde...</p>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#fixture">Ver Mas...</button>
+                            <div id="fixture" class="collapse">
+                                Este Martes se sorteo el Fixture del Torneo de Primera A de 
+                                la Liga Rafaelina de Fútbol que comenzará el 21 de Marzo.
+                                A continuacion les dejamos el Fixture del León.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/noticia3.png" class="card-img-top" alt="Intendente de Rafaela">
+                        <div class="card-body">
+                            <h5 class="card-title">Venta de Entradas</h5>
+                            <p class="card-text">La venta de entradas sera para socios con cuota al dia y no socios tendran su oporunidad tambien...</p>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#socios">Ver Mas...</button>
+                            <div id="socios" class="collapse">
+                            Las entradas se podran vender a 1 por persona, de 8 a 20 hs de corrido en la secretaria del Club 9 de Julio de Rafaela.
+                            El valor de la entrada es de $250
+                            Al partido se debera asistir con barbijo y DNI.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/noticia4.png" class="card-img-top" alt="Intendente de Rafaela">
+                        <div class="card-body">
+                            <h5 class="card-title">Ultimo amistos</h5>
+                            <p class="card-text">El día Viernes el León visitó a Peñarol
+                                en su último amistoso...</p>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#amistoso">Ver Mas...</button>
+                            <div id="amistoso" class="collapse">
+                                El día Viernes el León visitó a Peñarol en su último amistoso antes del comienzo de la Liga Rafaelina.
+                                Se jugaron dos partidos, en el primero el 9 ganó por 3 a 0 con goles de Mauro Cardozo - Augusto Baldasarre y Lucas Quiroz.
+                                Mientras que en el segundo partido igualaron 3 a 3, las conquistas fueron de Agustín Burdesse x2 y Maximiliano Martínez.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/noticia5.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Amistoso frente a Atl. Rafaela</h5>
+                            <p class="card-text">En la mañana del Sábado en el German Soltermam 
+                                el León jugo un partido...</p>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#clasicoamistoso">Ver Mas...</button>
+                            <div id="clasicoamistoso" class="collapse">
+                                En la mañana del Sábado en el German Soltermam el León jugo un partido amistoso 
+                                frente al equipo liguista de Atlético de Rafaela.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/noticia6.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Daniel Iturria</h5>
+                            <p class="card-text">Tenemos el honor de contar con la presencia de el jugador de los...</p>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#jugador">Ver Mas...</button>
+                            <div id="jugador" class="collapse">
+                                Tenemos el honor de contar con la presencia de Daniel Iturria, integrante del Plantel de los Muciélagos, Selección Argentina de Fútbol para ciegos.
+                                Daniel se encuentra entrenando en nuestra Institución, junto a su profe Sergio.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Contenedor Noticias-->
+
+    <!-- Sponsor -->
+    <section class="sponsor">
+        <ul class="galeria">
+            <li class="galeria__item"><img src="./images/sponsor01.png" class="imgTes3" alt="Carnave"></li>
+            <li class="galeria__item"><img src="./images/sponsor02.png" class="imgTes3" alt="Carlos Andretich"></li>
+            <li class="galeria__item"><img src="./images/sponsor03.png" class="imgTes3" alt="Granja Don Juana"></li>
+            <li class="galeria__item"><img src="./images/sponsor04.png" class="imgTes3" alt="Frio Raf"></li>
+            <li class="galeria__item"><img src="./images/sponsor05.png" class="imgTes3" alt="Prodas"></li>
+            <li class="galeria__item"><img src="./images/sponsor06.png" class="imgTes3" alt="Transporte Balestro"></li>
+            <li class="galeria__item"><img src="./images/sponsor07.jpg" class="imgTes3" alt="Danilo Hormigones S.A."></li>
+          </ul>
+    </section>
+    <!-- Fin Sponsor -->
+    
+    
+    <!-- Contacto-->
+    <section id="contacto" class="home-section bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="section-heading">
+                        <h2>Contactanos</h2>
+                        <div class="heading-line">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row headCont">
+                <div class="col-md-offset-2 col-md-8">
+                    <div id="sendmessage">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                    <div id="errormessage"></div>
+    
+                    <!-- formulario de contacto -->
+                    <form action="envia.php" method="post" class="form-consulta"> 
+                        <label>Nombre y apellido: <span>*</span>
+                            <input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
+                        </label>
+                        <label>Email: <span>*</span>
+                            <input type="email" name="email" placeholder="Email" class="campo-form" required>
+                        </label>
+                        <label>Consulta:
+                            <textarea name="consulta" class="campo-form"></textarea>
+                        </label>
+                        <input type="submit" value="Enviar" class="btn-form">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Contacto -->
+
+    <!-- footer-->
+    <footer class="probando">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Footer links -->
+            <div class="row text-center text-md-left  pb-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ">
+                    <br>
+                    <br>
+                    <br>
+                <img src="images/logo.png" alt=""width="280px" height="90px">
+                <p></p>
+            </div>
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+                <div class="title">El Club</div>
+                <p class="externo">
+                    <div class="prob02">
+                    Somos un club que trabaja dia a dia para que lo socios del club puedan dusfrutar de la comodidad de esta institucion.
+                    </div>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto ">
+                <div class="title">Contactanos</div>
+                    <p class="externo">
+                        <div class="prob02">
+                            Ayacucho 309 <br>
+                            mail <br>
+                            +54 3492 42-2971 <br>
+                        </div>
+                    <br>
+                    </p>
+                
+                <!-- Grid column -->
+                <div class="col text-center">
+                    <div class="col text-center">        
+                        <ul class="social-network social-circle">
+                            <li> 
+                                <a href="https://www.facebook.com/club9dejuliooficial" target="_blank" class="icoFacebook" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/9dejuliooficial" target="_blank" class="icoTwitter" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/club9dejuliooficial/?hl=es-la" target="_blank" class="icoGoogle" title="Linkedin">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send/?phone=543492411074&text&app_absent=0" class="icoGoogle" title="Whatsapp Juliense">
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Footer links -->
+    
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+                <!--Copyright-->
+            </div>
+        </div>
+        <!-- Grid row -->
+        <!-- Footer Links -->
+        <p>Copyright 2021 &copy; 9 de Julio de Rafaela.</p>
+        Diseñado por <a href="https://www.linkedin.com/in/pablo-saracco-58586b161/" target="_blank">Pablo Saracco</a>
+        </div>
+    </footer>
+    <!-- fin footer-->
+
+   <!-- Hacia arriba-->
+   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+   <!-- Fin Hacia arriba-->
+   
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+   <!-- opciones de la galeria-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+   <script src="js/script.js"></script>
+
+    <!-- Los card -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 
 </body>

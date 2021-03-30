@@ -3,32 +3,26 @@
     margin: 0;
 }
 
-/* ------------------------------------------------ Body ------------------------------------------------ */
-.body {
-    background-color: #d01125f0!important;
-}
-
 /* ------------------------------------------------ Menu ------------------------------------------------ */
-.bg-dark { /* cambia color de fondo */
-    background-color: #d01125!important;
+.bg-dark {
+    background-color: #d01125f0!important;
 }
 
 /* centra el menu */
 .navbar-collapse {
-    /* padding-left: 400px; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+	font-size: 18px;
+	font-weight: 700;
 }
 
 /* alto y centrado de logos del menu */
 .logos {
     height: 50px;
-    padding-top: 5px;
 }
 
 .escudo {
-    height: 75px;
-    /*padding-top: 5px;*/
+    height: 90px;
 }
 
 .nav-link {
@@ -39,143 +33,657 @@
     color: #000000!important;
 }
 
-/* ------------------------------------------------ Socios ------------------------------------------------ */
-    /*transicion boton socios*/
-.btn-socios {
-    border-radius: 5px;
-    /* height: 40px;
-    margin: 0 50%;
-    width: 80px; */
-    transition: all 1s;
-    background-color: #ffffff;
-    
-}
-
-.btn-socios:hover {
-    transform: scale(1.2);
-    background-color: #d01226;
-}
-
-/*.btn {
-    border-radius: 5px;
-    height: 40px;
-    margin: 0 50%;
-    width: 80px;
-    transition: all 1s;
-    background-color: #808080;
-}
-
-.btn:hover {
-    transform: scale(1.2);
-    background-color: #d01125;
-    
-}*/
-/*fin transicion*/
-
-
-.socios {
-    color: #fbf7f7;
-    text-align: center;
-    background-color: #1d1d1d;
-    margin: 0px;
-}
-
-.twitts {
-    color: #fbf7f7;
-    text-align: center;
-    background-color: #1d1d1d;
-    margin: -24px;
-}
-
-/* Noticias */
-.photo-grid-container {
-    color: #0c0c0c;
-    text-align: center;
-    background-color: #ebebebeb;
-    margin: -24px;
-}
-
-/* Section Proximo partido*/
-.proximoPartido {
-    text-align: center;
-    background-color: #d01125f0;
-    /*height: 15em;*/
-    margin: -16px;
-}
-
-/* Section*/
-.actualidad, .galeria {
-    color: #030303;
-    text-align: center;
-    background-color: #d01125f0;
-    image-resolution: ;
-}
-
-
-
-/* Contacto*/
-.contacto {
-    color: #030303;
-    text-align: center;
-    background-color: #cecdbf;
-}
-
-/* El club*/
-.elclub {
-    color: #030303;
-    text-align: center;
-    /*background-color: #1d1d1d;*/
-    background-image: url(../Club9deJulio/images/frente1.png);
-    /*background-size: contain;*/
-    background-position: bottom;
-    background-attachment: fixed;
-    margin: -40px;    
-    
-
-}
-
-/*test card*/
-.card-image > img {
-    transition: all 0.6s ease-in-out;
-    width: 100%;
-  }
-  .card-image > img:hover {
-    transform: scale(1.2) rotate(5deg);
-  }
-  .card-image {
-    overflow: hidden;
-    position: relative;
-    height: 30%;
-  }
-
-
-
-
-/* Btn primary */
-
-.btn-primary {
-    background-color: #d01125;
-    border-color: #d01125;
-}
-
+/* ------------------------------------------------ Slider ------------------------------------------------ */
 .carousel {
     height: 500px;
-  }
+}
 
 .carousel img {
     height: 500px;
     object-fit: cover;
-  }
+}
 
-  /* ------------------------------------------------ Footer ------------------------------------------------ */
+/* ------------------------------------------------ Socios ------------------------------------------------ */
+/* Maquina de escribir */
+.Soloh2 {
+	border-right: .15em solid #d31f32;
+		white-space: nowrap;
+		overflow: hidden;
+}
 
-/* esto no lo entiendo porque me hace eso*/
+.Soloh2:nth-child(1) {
+	/*width: 42em;*/
+	-webkit-animation: type 1s steps(40, end), blink .1s step-end infinite alternate;
+	animation: type 1s steps(40, end), blink .1s step-end infinite alternate;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes type {
+	0% {
+		width: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes type {
+	0% {
+		width: 0;
+	}
+		1% {
+			opacity: 1;
+		}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+
+@-webkit-keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+/* Aca termmina el efecto maquina*/
+
+/*transicion boton socios*/
+.btn-socios {
+	border-radius: 5px;
+	transition: all 1s;
+	background-color: #ffffff;
+}
+
+.btn-socios:hover {
+    transform: scale(1.2);
+	background: #1d1d1d;
+	color: #ededed;
+}
+
+.socios {
+    color: #fbf7f7;
+    text-align: center;
+    background-color: #d31f32;
+    margin: 0px;
+	padding-top: 35px;
+}
+
+/* ------------------------------------------------ Proximo Partido ------------------------------------------------ */
+.proximoPartido {
+    background-color: #1d1d1d99;
+    text-align: -webkit-center;
+    display: flex;
+	/*background-image: url('./images/cancha.jpg');*/
+	background-position: bottom;
+    background-attachment: fixed;
+	
+}
+.imgPartido {
+	height: 165px;
+}
+
+/* Imagenes Partido*/
+.imgTes {
+	border-radius: 8px;
+	/*box-shadow: 0 0 9px rgba(100, 100, 100, 0.7);*/
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	transition: transform 0.3s;
+}
+
+.imgTes:hover {
+	transform: scale(1.1);
+}
+
+/* ------------------------------------------------ Asociate ------------------------------------------------ */
+.text-primary {
+	color:#d01125 !important;
+	
+}
+
+/* ------------------------------------------------ Noticias ------------------------------------------------ */
+.photo-grid-container {
+    color: #0c0c0c;
+    text-align: center;
+    background-color: #ebebebeb;
+    margin: -24px 0;
+}
+
+/* ------------------------------------------------ El club ------------------------------------------------ */
+.elclub {
+    color: #030303;
+    text-align: center;
+    background-image: url('https://club9dejulioderafaela.000webhostapp.com/images/cancha.jpg');
+	background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    margin: -40px 0;    
+}
+
+/* ------------------------------------------------ Card Imagenes y Galeria ------------------------------------------------ */
+.card-image > img {
+	transition: all 0.6s ease-in-out;
+    width: 100%;
+}
+
+.card-image > img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.card-image {
+    overflow: hidden;
+    position: relative;
+    height: 30%;
+}
+
+.btn-primary {
+	/*background-color:transparent;*/
+	background-color: #d01125;
+    border-color: #d01125;
+	color: #ebebebeb;
+	border: 2px solid #ebebebeb;
+	font-size:20px;
+	text-transform: uppercase;
+	border-radius: 0px;	
+}
+
+.btn-primary:hover {
+	background-color:transparent;
+	border-color: #212529;
+	color: #212529;
+	border-radius: 20px;
+}
+
+.single_portfolio_text{
+	display:inline-block;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+
+.single_portfolio_text img{
+	width:100%;
+}
+
+.single_portfolio_text:hover .portfolio_images_overlay{
+	top:5%;
+	left: 5%;
+}
+
+.portfolio_images_overlay{
+	width: 90%;
+	height: 90%;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	margin: 0 auto;
+	top: -100%;
+	left: 5%;
+	position: absolute;
+	transition:.6s;
+}
+
+.portfolio_images_overlay h6{
+	text-transform: uppercase;
+	color: #ebebebeb;
+	font-size: 30px;
+	font-weight: 900;
+	border: 2px solid #ebebebeb;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.portfolio_images_overlay .product_price{
+	font-size: 35px;
+	color: #ebebebeb;
+	font-weight:800;
+	line-height:30px;
+}
+
+.portfolio_images_overlay .product_price i{
+    margin-right: -10px;
+}
+
+.zoom{
+	width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    border-radius: 50%;
+	background: #FF512F;
+	background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+	background: linear-gradient(to right, #F09819, #FF512F);
+    box-shadow:0px 0px 0px 10px rgba(0,0,0,0.5);
+	opacity:0.9;
+}
+
+.zoom:before {
+	content: "\f00e";
+    font-family: FontAwesome;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 70px;
+    padding-right: 20px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+@media (min-width:769px) and (max-width:991px) {
+	.portfolio_images_overlay {
+		padding: 0px;
+	}
+}
+@media (max-width:768px) {
+	.portfolio_images_overlay{
+		padding: 170px 20px;
+	}
+}
+@media (max-width:580px) {
+	.portfolio_images_overlay{
+		padding: 100px 20px;
+	}
+}
+@media (max-width:480px) {
+	.portfolio_images_overlay{
+		padding: 40px 20px;
+	}
+}
+@media (max-width:320px) {
+	.portfolio_images_overlay{
+		padding: 20px;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header, main {
+	color: #d01125;
+	max-width: 80%;
+	padding: 1.5rem 0;
+	margin: auto;
+}
+  
+/* Primer tanda imagenes*/
+.imgTes1 {
+	border-radius: 8px;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+
+.imgTes1:hover {
+	transform: scale(1.1);
+}
+  
+/* Segunda tanda imagenes*/
+.imgTes2 {
+	border-radius: 8px;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+
+.imgTes2:hover {
+	transform: scale(1.1);
+}
+
+/* Tercer tanda imagenes*/
+.imgTes3 {
+	border-radius: 8px;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	/*object-fit: cover;*/ /* este es muy bueno pero le vamos a poner el contenido*/
+	object-fit: contain;
+	transition: transform 0.3s;
+	filter:grayscale(0%);
+	opacity:0.2;
+}
+
+.imgTes3:hover {
+	transform: scale(1.1);
+	filter:grayscale(0%);
+	opacity:5;
+}
+
+.galleryTes {
+	display: grid;
+	gap: 1.5rem;
+	grid-auto-flow: dense;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.galleryTes > div:nth-of-type(odd) {
+	grid-row-end: span 1;
+}
+
+.galleryTes > div:nth-of-type(even) {
+	grid-row-end: span 2;
+}
+
+* {
+	box-sizing: border-box;
+}
+  
+img {
+	display: block;
+	max-width: 100%;
+}
+  
+.galeria {
+	padding: 20px;
+	display: flex;
+	/*flex-wrap: wrap;*/ 
+	/*muy bueno agranda en mas filas las img*/
+	justify-content: center;
+}
+  
+.galeria__item {
+	width: 80%;
+	cursor: pointer;
+}
+
+@media (min-width:480px) {
+	.galeria__item {
+		width: 48%;
+		margin: 5px;
+	}
+}
+
+@media (min-width:768px) {
+	.galeria__item {
+		width: 30%;
+	}	
+}
+
+@media (min-width:1024px) {
+	.galeria__item {
+		width: 20%;
+		margin: 15px;
+	}
+}
+  
+.modal {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.7);
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+.modal__img {
+	width: 70%;
+	max-width: 700px;
+}
+  
+.modal__boton {
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: monospace;
+	line-height: 50px;
+	text-align: center;
+	background: red;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+/* ------------------------------------------------ Sponsor ------------------------------------------------ */
+.sponsor {
+    color: #fbf7f7;
+    text-align: center;
+    background-color: #d01125;
+    margin: -16px 0;
+}
+
+.galeria {
+    color: #030303;
+    text-align: center;
+    background-color: #d01125f0;
+    image-resolution: 50%;
+}
+
+/* ------------------------------------------------ Conctacto ------------------------------------------------ */
+.form-consulta {
+	max-width: 411px; 
+	padding: 25px; 
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section-heading, .heading-line {
+	display: flex;
+	margin-left: 60%;
+}
+
+.headCont {
+	justify-content: flex-end;
+	display: flex;
+}
+
+.titCont {
+	display: flex;
+}
+
+.campo-form {
+	width:100%;
+	height:36px; 
+	margin:2px 0 6px; 
+	padding-left:6px; 
+	box-sizing: border-box; 
+	border-radius:3px; 
+	border:0; 
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size:1em;
+	background: #ededed;
+	align-content: flex-end;
+	background-color: #212529;
+	color: white;
+}
+
+label span {
+	color: #ededed;
+}
+
+textarea {
+	min-height: 150px!important;
+}
+
+.btn-form {
+	display: inline-block; 
+	border:0; 
+	background: #ededed; 
+	height: 46px; 
+	line-height: 46px; 
+	padding: 0 20px; 
+	border-radius: 6px; 
+	color:#1d1d1d; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	letter-spacing: 1px
+}
+
+.btn-form:hover {
+	background: #1d1d1d;
+	color: #ededed;
+}
+
+.home-section, .bg-gray {
+    background: #d01125;
+	color: #ededed;
+}
+
+.validation {
+  color: red;
+  display:none;
+  margin: 0;
+  font-weight:400;
+  font-size:13px;
+}
+
+#sendmessage {
+  color: green;
+  border:1px solid green;
+  display:none;
+  text-align:center;
+  padding:15px;
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+#errormessage {
+  color: red;
+  display:none;
+  border:1px solid red;
+  text-align:center;
+  padding:15px;
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+}
+
+/* ------------------------------------------------ Footer ------------------------------------------------ */
 footer.probando {
     color: #fbf7f7;
     background-color: #1d1d1d;
-    margin: -16px;
 }
 
-/*.probando {
-    background-color: #cecdbf;
-}*/
+/* footer probando*/
+.desing {
+	color: #d01125;
+}
+
+.desing:hover {
+	color: #fbf7f7;
+}
+
+/* ------------------------------------------------ Redes ------------------------------------------------ */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0px;
+}
+
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+	background-color:#ffffff;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#ffffff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#ffffff;
+}
+
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:rgb(14, 13, 13);
+}
+
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	background-color: #d31f32;
+}
+
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.pb-3 {
+	padding: 25px;
+}
+
+/* ------------------------------------------------ Back to top button ------------------------------------------------ */
+.back-to-top {
+	position: fixed;
+	display: none;
+	padding: 6px 12px 9px 12px;
+	font-size: 16px;
+	border-radius: 2px;
+	right: 15px;
+	bottom: 15px;
+	transition: background 0.5s;
+	z-index:1000;
+}
+  
+@media (max-width: 768px) {
+	.back-to-top {
+		bottom: 15px;
+	}
+}
+  
+.back-to-top:focus {
+	outline: none;
+}
+

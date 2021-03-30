@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <!-- Estilos-->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+        <!-- SEO-->
+        <meta name="description" content="El Club A. 9 de Julio, es el club mas popular de la ciudad de Rafaela, provincia de Santa Fe. Juega actualmente en el Torneo Regional, se ubica en la calle Ayacucho 309.">
+        <meta name="keywords" content="9 de julio, club, rafaela, el mejor club">
+        <meta name="author" content="Pablo Saracco">
+        <meta name="copyright" content="Club 9 de julio">
+
+        <title>Club A. 9 de Julio</title>
+    </head>
+<body>
+    <!-- Menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="escudo" class="escudo img-fluid"> <!-- Img-fluid ajusta la imagen al tamaño-->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <a class="nav-link" href="./index.html" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                    HOME
+                    </a>
+                    <a class="nav-link" href="./noticias.html" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                        NOTICIAS
+                    </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EL CLUB
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                            <li><a class="dropdown-item" href="#">Estatuto</a></li>
+                            <li><a class="dropdown-item" href="#">Autoridades</a></li>
+                            <li><a class="dropdown-item" href="#">Departamento</a></li>
+                            <li><a class="dropdown-item" href="#">Instalaciones</a></li>
+                        </ul>
+                    </li>
+                        <!-- El dropdown-toggle le da al menu la flecha para que baje al sub menu 
+                        // el data-bs-toggle="dropdown" hace que baje como un landigPage-->
+                    <a class="nav-link" href="./deportes.html" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                        DEPORTES
+                    </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#socios" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SOCIOS
+                        </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Oficina de Socios</a></li>
+                                <li><a class="dropdown-item" href="#">Socios Leon</a></li>
+                                <li><a class="dropdown-item" href="#">Adherite al Débito Automático</a></li>
+                                <li><a class="dropdown-item" href="#">Paga tus cuotas</a></li>
+                                <li><a class="dropdown-item" href="#">Beneficios</a></li>
+                                <li><a class="dropdown-item" href="./socios.html">Hacete Socio</a></li>
+                            </ul>
+                    </li>
+                    <a class="nav-link" href="#contacto" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                        CONTACTO
+                    </a>
+                    <a class="nav-link" href="./login/login.html" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                        LOGIN
+                    </a>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#"><img src="images/carrito.png" alt="escudo" class="logos"></a>
+        </div>
+    </nav>
+    <!-- Fin Menu-->
+    
+    <!-- Beneficios -->
+    <section id="socios" class="socios"> <!-- Beneficios para los socios-->
+        <div class="container conTenedor">
+            <h2 class="Soloh2">Adherite y conoce los Beneficios que tenemos para vos<span>&#160;</span></h2>
+            <div class="row  pb-3">
+            <!--    <div class="col-sm-12 col-md-4 p-2">
+                    <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm-12 col-md-4 p-2">
+                    <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm-12 col-md-4 p-2">
+                    <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+                </div>
+                -->
+                <div class="row d-flex justify-content-center my-2">
+                    <div class="col-sm-2">
+                        <a href="./socios.html" class="btn btn-socios" rel="noopener noreferrer">Adherite</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ver si va este div-->
+    </section>
+    <!-- Fin Beneficios-->
+
+    <!-- Cuerpo Socios-->
+    <div class="container pt-4 pb-5">
+        <h2 class="tt-1 text-primary mb-4">Historia</h2>
+        <div id="cuerpo">
+            <div class="asociate contenidos aire">
+                <h4 class="h5"><span class="text-primary">Inicios</span></h4>
+                <p>A principios del siglo XX, más precisamente mediados de 1904 en el pequeño pero incipiente poblado de Rafaela, tres jóvenes de 12 años (Eduardo Tello, Luis Gunzinger y Atilio Scarazzini) decidieron fundar un club, movilizados por su pasión por el fútbol. Dicho club recibió el nombre de "Central Norte" por la simple razón del espacio geográfico que ocupaban. Los primeros partidos se desarrollaron en diferentes terrenos baldíos de la zona.
+
+                    Dos años después, en 1906, un vecino del lugar, Paulino Rosales, le ofreció a los fundadores unos recibos impresos con el nombre de Club 9 de Julio, lo que los motivó a cambiar de nombre y adoptar dicha denominación. Además, por esa misma época, se mudaron a un predio ubicado en calle Ayacucho, lugar donde hasta hoy en día funciona la sede social de la institución.
+                    
+                    En el año 1925, el “9” participó en la Liga Rosarina de Fútbol, disputando partidos con Central, Newell's, Tiro Federal, entre otros. Al mismo tiempo, se realizaron encuentros con equipos de la capital provincial: Unión, Colón y Sportivo, afiliándose a principio de la década del '30 a la Liga Santafesina de Fútbol.
+                    
+                    En 1947 se inauguraron las torres de iluminación del estadio de fútbol con un partido amistoso frente a San Lorenzo de Almagro. Dos años después, se inició la construcción de la tribuna de cemento, la cual estuvo a cargo de dirigentes y socios, que gratuitamente colaboraron en la mano de obra.</p>
+            
+                <h4 class="h5"><span class="text-primary">Torneo del Interior</span></h4>
+                <p>En 1986, logró participar del Torneo del Interior para la temporada 1986-87, donde quedó 1° en la Zona A de Santa Fe accediendo a la Región Centro donde quedó a un punto de la zona de acceso a la Etapa Zonal, mientras que en la de 1987-88, por el grupo C de la Región Norte de la Zona Noroeste, terminó primero pero quedó segundo por la Región Litoral en la 2° Fase de la misma zona.
+
+                    En la temporada de 1989-90 venció a Sp. del Norte y a Ceres Unidos en la final por el grupo H de la Región Litoral, ya en la 2ª fase venció a Romang FC y en la final a Ceres Unidos por el Grupo 4 y accedió a la Fase Final donde venció a Centenario y venció en la final a Argentino de Firmat por 4 a 1 global y se consagró campeón por primera vez, accediendo al Zonal Noroeste por el ascenso a la B Nacional, sin embargo perdió 3 a 2 en el global con All Boys por cuartos de final.2​
+                    
+                    En 1991 llegó hasta la fase final donde venció al Central Argentino Olímpico pero cayó en la final por 3 a 2 global ante Gimnasia de Concepción de Uruguay. Para la temporada 1991-92 superó a Ceres Unidos y 9 de Julio de Arequito en el grupo 1 de la Región Litoral y en la segunda fase a Juan XXIII y el club de Arequito por el Grupo 3 y en la fase final venció a Arroyo Seco y en la final por 6 a 2 global a San Benito consiguiendo su segundo campeonato, ya en el zonal Noroeste por el ascenso cayó en cuartos ante Sarmiento de Junín por 4 a 2 en el global.3​
+                    
+                    En 1993 llegó a la Fase final, tras eliminar a Ceres Unidos y Ocampo Fábrica en la primera fase y al Arroyo Seco y Sp. del Norte en la segunda, sin embargo cayó 5 a 2 en el global con Patronato. En 1994 no participó y en 1995 quedó último en el grupo 7 en la segunda fase.</p>
+                
+                <h4 class="h5"><span class="text-primary">Argentino B</span></h4>
+                <p>Participó por primera vez en la temporada 1997-98, en donde quedó 2° en el Grupo 2-A de la zona de Litoral. En la temporada 1999-00 quedó 1° en el Grupo 7 de la 1° fase pero 2° en el grupo 4 de la segunda.</p>
+                
+                <h4 class="h5"><span class="text-primary">Ascenso al Argentino A</span></h4>
+                <p>En el Torneo Argentino B 2000-01, 9 de Julio participó en la Zona Norte del Sub Grupo Santa Fe de la Región Central, quedando primero accedió al subgrupo 1 de la Región Central de la 2° fase, donde también quedó primero y accedió al Grupo E de la 3° fase, quedando primero y accediendo a la 4ª fase, quedando primero y accedió a la fase final. En la última fecha del grupo B, se le dio por ganado a 9 de Julio 1 a 0 el encuentro ante Central Norte en Salta, logrando el campeonato y primer ascenso al Argentino A.4​
+
+                    Para la temporada 2001-02 del Argentino A, el conjunto quedó a 2 puntos de la promoción por el descenso en su zona.
+                    
+                </p>
+
+                <h4 class="h5"><span class="text-primary">Descenso al Argentino B</span></h4>
+                <p>En el Torneo Argentino A 2002-03 el conjunto terminó último en la Zona Centro en el Apertura y Clausura, quedando penúltimo en la zona de descenso, descendiendo para la siguiente temporada al argentino B, donde terminaría 2° en la Zona 21 pero caería en penales con su homónimo de Monteros en la 1° eliminatoria del 1° ascenso.</p>
+                
+                <h4 class="h5"><span class="text-primary">Retorno al Argentino A</span></h4>
+                <p>En el Torneo Argentino B 2004-05, 9 de Julio terminó 2° en la zona H del Apertura accediendo a la 2° fase, donde venció a Atlético Uruguay 4 a 3 y accedió a la 3° fase y venció´5 a 3 a Chaco For Ever y accedió a semifinales, en el Clausura terminaría penúltimo en la misma zona perdiendo la chance de jugar directamente la final. En semifinales cayó 4 a 0 ente Sp. Patria perdiendo 4 a 3 en el global, accediendo a la Liguilla donde venció 2 a 1 en el global a Sp. Belgrano ascendiendo al Argentino A.
+
+                    En la temporada 2005-06 del Argentino A terminó penúltimo en su zona en el Apertura, mientras que en el Clausura terminó tercero y accedió a la segunda fase, quedando eliminado en cuartos de final con San Martín de Tucumán. En la temporada 2006-07 terminó sexto en su zona. En la temporada 2007-08 terminó penúltimo en su zona a 2 puntos de la promoción por el descenso. En la temporada 2008-09 realizó una buena campaña terminando tercero en su zona accediendo a la Fase Final que definía a los finalistas, instancia que no logró alcanzar. En la temporada 2009-10 terminó penúltimo en su zona del Apertura y cuarto a 2 puntos de la segunda fase en el clausura.
+                    
+                </p>
+
+                <h4 class="h5"><span class="text-primary">Nuevo descenso al Argentino B</span></h4>
+                <p>En el Torneo Argentino A 2010-11, 9 de julio compitió en la Zona 3 y terminó último, teniendo que jugar la Zona C de la reválida. En la penúltima fecha de la reválida, 9 de Julio empató 2 a 2 con Gimnasia de Concepción en Rafaela descendiendo al Torneo Argentino B.</p>
+                               
+            </div>    
+            
+            <p class="p-3 mt-4 mb-2 bg-dark text-white"><strong>IMPORTANTE:</strong> NUESTRO CLUB TE NECESITA ASOCIATE.</p>
+            <p class="mt-5 text-center"><a class="btn btn-lg btn-primary px-5" href="#" target="_blank">Asociate</a></p>
+    
+            <div class="page-header">
+                <h3>Lugares y horarios de atención:</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                        <li class="my-3"><h6 class="tt-5b"><a href="#" class="text-primary nxl-sindeco">Club 9 de Julio:</a></h6></li>
+                        <li class="mt-2"><span class="ico-mapa mr-2"></span>Ayacucho 309.</li>
+                        <li class="mt-2"><span class="ico-hora mr-2"></span>Lunes a viernes de 8 a 20:00 hs.</li>
+                        <li class="mt-2"><span class="ico-telefono mr-2"></span>422971</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Cuerpo Socios-->
+
+    <!-- Sponsor -->
+    <section class="sponsor">
+        <ul class="galeria">
+            <li class="galeria__item"><img src="./images/sponsor01.png" class="imgTes3" alt="Carnave"></li>
+            <li class="galeria__item"><img src="./images/sponsor02.png" class="imgTes3" alt="Carlos Andretich"></li>
+            <li class="galeria__item"><img src="./images/sponsor03.png" class="imgTes3" alt="Granja Don Juana"></li>
+            <li class="galeria__item"><img src="./images/sponsor04.png" class="imgTes3" alt="Frio Raf"></li>
+            <li class="galeria__item"><img src="./images/sponsor05.png" class="imgTes3" alt="Prodas"></li>
+            <li class="galeria__item"><img src="./images/sponsor06.png" class="imgTes3" alt="Transporte Balestro"></li>
+            <li class="galeria__item"><img src="./images/sponsor07.jpg" class="imgTes3" alt="Danilo Hormigones S.A."></li>
+          </ul>
+    </section>
+    <!-- Fin Sponsor -->
+    
+    
+    <!-- Contacto-->
+    <section id="contacto" class="home-section bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="section-heading">
+                        <h2>Contactanos</h2>
+                        <div class="heading-line">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row headCont">
+                <div class="col-md-offset-2 col-md-8">
+                    <div id="sendmessage">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                    <div id="errormessage"></div>
+    
+                    <!-- formulario de contacto -->
+                    <form action="envia.php" method="post" class="form-consulta"> 
+                        <label>Nombre y apellido: <span>*</span>
+                            <input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
+                        </label>
+                        <label>Email: <span>*</span>
+                            <input type="email" name="email" placeholder="Email" class="campo-form" required>
+                        </label>
+                        <label>Consulta:
+                            <textarea name="consulta" class="campo-form"></textarea>
+                        </label>
+                        <input type="submit" value="Enviar" class="btn-form">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Contacto -->
+
+    <!-- footer-->
+    <footer class="probando">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Footer links -->
+            <div class="row text-center text-md-left  pb-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ">
+                    <br>
+                    <br>
+                    <br>
+                <img src="images/logo.png" alt=""width="280px" height="90px">
+                <p></p>
+            </div>
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+                <div class="title">El Club</div>
+                <p class="externo">
+                    <div class="prob02">
+                    Somos un club que trabaja dia a dia para que lo socios del club puedan dusfrutar de la comodidad de esta institucion.
+                    </div>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto ">
+                <div class="title">Contactanos</div>
+                    <p class="externo">
+                        <div class="prob02">
+                            Ayacucho 309 <br>
+                            mail <br>
+                            +54 3492 42-2971 <br>
+                        </div>
+                    <br>
+                    </p>
+                
+                <!-- Grid column -->
+                <div class="col text-center">
+                    <div class="col text-center">        
+                        <ul class="social-network social-circle">
+                            <li> 
+                                <a href="https://www.facebook.com/club9dejuliooficial" target="_blank" class="icoFacebook" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/9dejuliooficial" target="_blank" class="icoTwitter" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/club9dejuliooficial/?hl=es-la" target="_blank" class="icoGoogle" title="Linkedin">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send/?phone=543492411074&text&app_absent=0" class="icoGoogle" title="Whatsapp Juliense">
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Footer links -->
+    
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+                <!--Copyright-->
+            </div>
+        </div>
+        <!-- Grid row -->
+        <!-- Footer Links -->
+        <p>Copyright 2021 &copy; 9 de Julio de Rafaela.</p>
+        Diseñado por <a href="https://www.linkedin.com/in/pablo-saracco-58586b161/" target="_blank">Pablo Saracco</a>
+        </div>
+    </footer>
+    <!-- fin footer-->
+
+   <!-- Hacia arriba-->
+   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+   <!-- Fin Hacia arriba-->
+   
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+   <!-- opciones de la galeria-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+   <script src="js/script.js"></script>
+
+   <!-- Los card -->
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
