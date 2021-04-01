@@ -113,7 +113,7 @@ function updateShoppingCartTotal(){
      
   });
 
-  shoppingCartTotal.innerHTML = `$ ${total.toFixed(2)}`; //el tofixed es para los decimales
+  shoppingCartTotal.innerHTML = `$ ${total.toFixed(2)}`; //el tofixed es para los decimales, aunq no tengo en la web
 }
 
 function removeShoppingCartItem(event) {
@@ -131,7 +131,7 @@ function quantityChanged(event) {
   if (input.value <= 0) {
     input.value = 1;
   }
- // ---- no aplicar ahora, dejar mejor para entenderlo con react
+ //se puede pasar a ternario, explicaron en react y quedaría input.valued <= 0 ? (input.value = 1) : null   ---- no aplicar ahora, dejo para react
   updateShoppingCartTotal();
 
 }
@@ -143,7 +143,7 @@ function comprarButtonClicked() {
 
 
 
-//formulario de contacto
+//material contact form animation
 $('.contact-form').find('.form-control').each(function() {
   var targetItem = $(this).parent();
   if ($(this).val()) {

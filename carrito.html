@@ -1,43 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-     <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- boostrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    
-    <!-- Mi CSS -->
-    <link rel="stylesheet" href="./archivo.css">
-    <link rel="stylesheet" href="./style.css">
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <!-- Estilos-->
+        <link rel="stylesheet" href="style.css">
 
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 
-    <!-- RRSS Footer -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- SEO-->
+        <meta name="description" content="El Club A. 9 de Julio, es el club mas popular de la ciudad de Rafaela, provincia de Santa Fe. Juega actualmente en el Torneo Regional, se ubica en la calle Ayacucho 309.">
+        <meta name="keywords" content="9 de julio, club, rafaela, el mejor club">
+        <meta name="author" content="Pablo Saracco">
+        <meta name="copyright" content="Club 9 de julio">
 
-    <!-- Mis tipografías-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
-
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/faf39d305a.js" crossorigin="anonymous"></script>
-
-    <!-- RRSS Footer -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    
-    <!-- SEO-->
-    <meta name="description" content="El Club A. 9 de Julio, es el club mas popular de la ciudad de Rafaela, provincia de Santa Fe. Juega actualmente en el Torneo Regional, se ubica en la calle Ayacucho 309.">
-    <meta name="keywords" content="9 de julio, club, rafaela, el mejor club">
-    <meta name="author" content="Pablo Saracco">
-    <meta name="copyright" content="Club 9 de julio">
-    
-    <title>Tienda del Leon</title>
-</head>
-
+        <title>Club A. 9 de Julio</title>
+    </head>
 <body>
     <!-- Menu-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -45,15 +29,17 @@
             <a class="navbar-brand" href="./index.html">
                 <img src="images/logo.png" alt="escudo" class="escudo img-fluid"> <!-- Img-fluid ajusta la imagen al tamaño-->
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
                     <a class="nav-link" href="./index.html" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
                     HOME
                     </a>
-                    <a class="nav-link" href="#noticias" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                    <a class="nav-link" href="./noticias.html" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
                         NOTICIAS
                     </a>
                     <li class="nav-item dropdown">
@@ -61,12 +47,11 @@
                             EL CLUB
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Historia</a></li>
-                            <li><a class="dropdown-item" href="#">Camisetas</a></li>
-                            <li><a class="dropdown-item" href="#">Estatuto</a></li>
-                            <li><a class="dropdown-item" href="#">Autoridades</a></li>
-                            <li><a class="dropdown-item" href="#">Departamento</a></li>
-                            <li><a class="dropdown-item" href="#">Instalaciones</a></li>
+                            <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="./camisetas.html">Camisetas</a></li>
+                            <li><a class="dropdown-item" href="./estatuto.html">Estatuto</a></li>
+                            <li><a class="dropdown-item" href="./autoridades.html">Autoridades</a></li>
+                            <!--<li><a class="dropdown-item" href="#">Instalaciones</a></li>-->
                         </ul>
                     </li>
                         <!-- El dropdown-toggle le da al menu la flecha para que baje al sub menu 
@@ -79,115 +64,28 @@
                             SOCIOS
                         </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Oficina de Socios</a></li>
-                                <li><a class="dropdown-item" href="#">Socios Leon</a></li>
-                                <li><a class="dropdown-item" href="#">Adherite al Débito Automático</a></li>
-                                <li><a class="dropdown-item" href="#">Paga tus cuotas</a></li>
-                                <li><a class="dropdown-item" href="#">Beneficios</a></li>
-                                <li><a class="dropdown-item" href="#">Hacete Socio</a></li>
+                                <!--<li><a class="dropdown-item" href="#">Oficina de Socios</a></li>-->
+                                <li><a class="dropdown-item" href="./login/login.html" target="_blank">Socios Leon</a></li>
+                                <li><a class="dropdown-item" href="./login/login.html" target="_blank">Adherite al Débito Automático</a></li>
+                                <li><a class="dropdown-item" href="./login/login.html" target="_blank">Paga tus cuotas</a></li>
+                                <!--<li><a class="dropdown-item" href="#">Beneficios</a></li>-->
+                                <li><a class="dropdown-item" href="./socios.html">Hacete Socio</a></li>
                             </ul>
                     </li>
                     <a class="nav-link" href="#contacto" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
                         CONTACTO
                     </a>
-                    <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                    <a class="nav-link" href="./login/login.html" target="_blank" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
                         LOGIN
                     </a>
                 </ul>
             </div>
-            <!--<a class="navbar-brand" href="#"><img src="images/carrito.png" alt="escudo" class="logos"></a>-->
-
-            <header class="headerProduct">
-                <div class="cartBar">
-                    <ul>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <!-- Inicio carrito de compras-->
-                                <div class="shopping-cart">
-                                    <div class="container">        
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="shopping-cart-header">
-                                                    <h6>Producto</h6>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="shopping-cart-header">
-                                                    <h6 class="">Precio</h6>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="shopping-cart-header">
-                                                    <h6>Cantidad</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Comienzo de compra-->
-                                        <div class="shopping-cart-items shoppingCartItemsContainer">
-                                        </div>
-                                        <!-- Fin Compra-->
-        
-                                        <!-- Total Compra-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="shopping-cart-total d-flex align-items-center">
-                                                    <p>Total</p>
-                                                    <p class="shoppingCartTotal">$0</p>
-                                                    <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                                                        data-delay="2000">
-                                                        <div class="toast-header">
-                                                            <span>✅</span>
-                                                            <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
-                                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                    <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                                                        data-target="#comprarModal" id="btnAjax">Comprar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Fin Total Compra-->
-                                        <!-- Agregar POP UP que va a recibir compra para sacarlo del producto o enviar a MercadoPAGO-->
-                                        <!-- Inicio de Modo de compra-->
-                                        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-                                            aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <p>Pronto recibirá su pedido</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Fin modo de compra -->
-                                    </div>
-                                </div>
-                                <!-- Fin carro de compras-->
-                            </div>
-                        </li>
-                    </ul>  
-                </div>
-            </header>
+            <a class="navbar-brand" href="#"><img src="images/carrito.png" alt="escudo" class="logos"></a>
         </div>
     </nav>
     <!-- Fin Menu-->
 
-    <!-- Beneficios-->
+        <!-- Beneficios-->
     <section id="socios" class="socios"> <!-- Beneficios para los socios-->
         <div class="container conTenedor">
             <h2 class="Soloh2">Adherite y conoce los Beneficios que tenemos para vos<span>&#160;</span></h2>
@@ -230,170 +128,95 @@
     </section>
     <!-- Fin proximo partido-->
 
-    <!-- Card Productos-->
-    <section id="primeraProduct"> 
-        <div class="container-fluid">
-            <div class="row">               
-                <div class="col-md-12">
-                    <div id="rightProducts">
-                        <div class="titulosarti"><h2>Productos</h2>
-                    </div>
-                    <hr>
-                    <div class="container">           
-                        <div class="row">   
-                            <div class="col-md-4">
-                                <div class="item">
-                                    <div class="card card-product item">
-                                        <div class="img-wrap"><img class="item-image" src="./img/camiseta.png"></div>
-                                        <figcaption class="info-wrap">
-                                            <h4 class="item-title">Camiseta</h4>        
-                                        </figcaption>          
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="item-price"> $1200</div>
-                                            <button class="btn btn-outline-dark addToCart" type="button">COMPRAR</button> 
-                                    </div> 
-                                </div>
-                            </div>
 
-                            <div class="col-md-4">
-                                <div class="item">
-                                    <div class="card card-product item">
-                                        <div class="img-wrap"><img class="item-image" src="./img/chomba.png"></div>
-                                            <figcaption class="info-wrap">            
-                                                <h4 class="item-title">Chomba</h4>            
-                                            </figcaption>         
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="item-price"> $450</div> 
-                                        <button class="btn btn-outline-dark addToCart" type="button">COMPRAR</button> 
-                                </div>
+    <!-- Productos-->
+    <section id="elclub" class="elclub">
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/camiseta.jpg" class="card-img-top" alt="bochas en club 9 de julio">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta Titular</h5>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#infantiles">COMPRAR</button>
+                            <div id="infantiles" class="collapse">
+                            PROXIMAMENTE.!
                             </div>
-                        
-                            <div class="col-md-4">
-                                <div class="item">
-                                    <div class="card card-product item">
-                                        <div class="img-wrap"><img class="item-image" src="./imgp03.png"></div>
-                                            <figcaption class="info-wrap">
-                                                <h4 class="item-title">Pantalon Corto</h4>
-                                            </figcaption>         
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="item-price"> $500</div>
-                                        <button class="btn btn-outline-dark addToCart" type="button">COMPRAR</button> 
-                                </div>
-                            </div> 
-                        
-                        </div>     
+                        </div>
                     </div>
-                    
-                    <div class="container">           
-                        <div class="row">   
-                            <div class="col-md-4">
-                                <div class="item">
-                                    <div class="card card-product item">
-                                        <div class="img-wrap"><img class="item-image" src="../img02.png"></div>
-                                            <figcaption class="info-wrap">
-                                                <h4 class="item-title">Pantalon Largo</h4>         
-                                            </figcaption>          
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="item-price"> $400</div>
-                                            <button class="btn btn-outline-dark addToCart" type="button">COMPRAR</button> 
-                                    </div> 
-                                </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/camiseta1.jpg" class="card-img-top" alt="bochas en club 9 de julio">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta Suplente</h5>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#futbolfemenino">COMPRAR</button>
+                            <div id="futbolfemenino" class="collapse">
+                                PROXIMAMENTE.!!
                             </div>
-                        
-                            <div class="col-md-4">
-                                <div class="item">
-                                    <div class="card card-product">
-                                        <div class="img-wrap"><img class="item-image" src="../imgb02.png"></div>
-                                            <figcaption class="info-wrap">            
-                                                <h4 class="item-title">Buzo</h4>            
-                                            </figcaption>         
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="item-price"> $600</div>
-                                            <button class="btn btn-outline-dark addToCart" type="button">COMPRAR</button>
-                                    </div> 
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/pantalon.png" class="card-img-top" alt="bochas en club 9 de julio">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantalon Corto</h5>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Automodelismo">COMPRAR</button>
+                            <div id="Automodelismo" class="collapse">
+                                PROXIMAMENTE.!!
                             </div>
-                        
-                            <div class="col-md-4">
-                                <div class="item">
-                                    <div class=" card card-product">
-                                        <div class="img-wrap"><img class="item-image" src="../img02.png"></div>
-                                            <figcaption class="info-wrap">
-                                                <h4 class="item-title">Campera</h4>
-                                            </figcaption>         
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="item-price"> $650</div>
-                                            <button class="btn btn-outline-dark addToCart" type="button">COMPRAR</button> 
-                                    </div>
-                                </div> 
-                            </div> 
-                        </div>     
-                    </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="container">           
-                        <div class="row">   
-                            <div class="col-md-4">
-                                <div class="item">
-                                    <div class="card card-product item">
-                                        <div class="img-wrap"><img class="item-image" src="../img/sk0png"></div>
-                                        <figcaption class="info-wrap">
-                                            <h4 class="item-title">Entreno</h4>         
-                                        </figcaption>          
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="item-price"> $400</div>
-                                            <button class="btn btn-outline-dark addToCart" type="button">COMPRAR</button> 
-                                    </div> 
-                                </div>
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/cuadernos.jpg" class="card-img-top" alt="bochas en club 9 de julio">
+                        <div class="card-body">
+                            <h5 class="card-title">Anotadores</h5>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#basquet">COMPRAR</button>
+                            <div id="basquet" class="collapse">
+                                PROXIMAMENTE.!!
                             </div>
-                        
-                            <div class="col-md-4">
-                                <div class="item">
-                                    <div class="card card-product">
-                                        <div class="img-wrap"><img class="item-image" src="../img03.png"></div>
-                                            <figcaption class="info-wrap">            
-                                                <h4 class="item-title">Sudadera</h4>            
-                                            </figcaption>         
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="item-price"> $600</div>
-                                            <button class="btn btn-outline-dark addToCart" type="button">COMPRAR</button> 
-                                    </div> 
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/llaveros.jpg" class="card-img-top" alt="bochas en club 9 de julio">
+                        <div class="card-body">
+                            <h5 class="card-title">LLaveros</h5>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#circo">COMPRAR</button>
+                            <div id="circo" class="collapse">
+                                PROXIMAMENTE.!!
                             </div>
-                        
-                            <div class="col-md-4">
-                                <div class="item">
-                                    <div class=" card card-product">
-                                        <div class="img-wrap"><img class="item-image" src="../img/jk03g"></div>
-                                            <figcaption class="info-wrap">
-                                                <h4 class="item-title">Medias</h4>
-                                            </figcaption>         
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="item-price"> $650</div>
-                                            <button class="btn btn-outline-dark addToCart" type="button">COMPRAR</button> 
-                                    </div>
-                                </div> 
-                            </div> 
-                        </div>     
-                    </div>  
-                </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card my-3">
+                        <img src="images/sudadera.jpg" class="card-img-top" alt="bochas en club 9 de julio">
+                        <div class="card-body">
+                            <h5 class="card-title">Sudadera</h5>
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#artistica">COMPRAR</button>
+                            <div id="artistica" class="collapse">
+                                PROXIMAMENTE.!!
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- Fin card Productos-->
 
-    <!-- Sponsor -->
-    <section class="sponsor">
+ <!-- Sponsor -->
+ <section class="sponsor">
     <ul class="galeria">
         <li class="galeria__item"><img src="./images/sponsor01.png" class="imgTes3" alt="Carnave"></li>
         <li class="galeria__item"><img src="./images/sponsor02.png" class="imgTes3" alt="Carlos Andretich"></li>
@@ -402,167 +225,155 @@
         <li class="galeria__item"><img src="./images/sponsor05.png" class="imgTes3" alt="Prodas"></li>
         <li class="galeria__item"><img src="./images/sponsor06.png" class="imgTes3" alt="Transporte Balestro"></li>
         <li class="galeria__item"><img src="./images/sponsor07.jpg" class="imgTes3" alt="Danilo Hormigones S.A."></li>
-        </ul>
-    </section>
-    <!-- Fin Sponsor -->
-        
-    <!-- Contacto-->
-    <section id="contacto" class="home-section bg-gray">
-        <div class="container">
-            <div class="row titCont">
-                <div class="col-md-offset-2 col-md-8">
-                    <div class="section-heading">
-                        <!--<h2>Contactanos</h2>-->
-                        <div class="heading-line">
+        <li class="galeria__item"><img src="./images/sponsor08.png" class="imgTes3" alt="Daema"></li>
+      </ul>
+</section>
+<!-- Fin Sponsor -->
+
+
+        <!-- Contacto-->
+        <section id="contacto" class="sectionContacto">
+            <div class="bodiContacto">
+                <div class=container>
+                    <form class="formulario">
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-sm-12">
+                                <label for="inputText4">Nombre</label>
+                                <input type="text" class="form-control" id="inputText4">
+                            </div>
+                            <div class="form-group col-md-12 col-sm-12">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row headCont">
-                <div class="col-md-offset-2 col-md-8">
-                    <div id="sendmessage">Tu mensaje ha sido enviado. ¡Gracias!</div>
-                    <div id="errormessage"></div>
-    
-                    <!-- formulario de contacto -->
-                    <form action="envia.php" method="post" class="form-consulta"> 
-                        <label>Nombre y apellido: <span>*</span>
-                            <input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
-                        </label>
-                        <label>Email: <span>*</span>
-                            <input type="email" name="email" placeholder="Email" class="campo-form" required>
-                        </label>
-                        <label>Consulta:
-                            <textarea name="consulta" class="campo-form"></textarea>
-                        </label>
-                        <input type="submit" value="Enviar" class="btn-form">
+                        <div class="form-group">
+                            <label for="input">Mensaje</label>
+                            <textarea class="form-control" id="inputmessage" name="inputmessage" rows="4" cols="100">
+                            </textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                Los datos son correctos
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-form btn-outline-warning">Enviar</button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Fin Contacto -->
+        </section>
+        <!-- Fin Contacto -->
 
-    <!-- footer-->
-    <footer class="probando">
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-            <!-- Footer links -->
-            <div class="row text-center text-md-left  pb-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ">
-                    <br>
-                    <br>
-                    <br>
-                <img src="images/logo.png" alt=""width="280px" height="90px">
-                <p></p>
-            </div>
+<!-- footer-->
+<footer class="probando">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+        <!-- Footer links -->
+        <div class="row text-center text-md-left  pb-3">
             <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none">
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
-                <div class="title">El Club</div>
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ">
+                <br>
+                <br>
+                <br>
+            <img src="images/logo.png" alt=""width="280px" height="90px">
+            <p></p>
+        </div>
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+            <div class="title">El Club</div>
+            <p class="externo">
+                <div class="prob02">
+                Somos un club que trabaja dia a dia para que lo socios del club puedan dusfrutar de la comodidad de esta institucion.
+                </div>
+            </p>
+
+        </div>
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto ">
+            <div class="title">Contactanos</div>
                 <p class="externo">
                     <div class="prob02">
-                    Somos un club que trabaja dia a dia para que lo socios del club puedan dusfrutar de la comodidad de esta institucion.
+                        Ayacucho 309 <br>
+                        club9dejulio@hotmail.com<br>
+                        +54 3492 42-2971 <br>
                     </div>
+                <br>
                 </p>
-
-            </div>
+            
             <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none">
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none">
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto ">
-                <div class="title">Contactanos</div>
-                    <p class="externo">
-                        <div class="prob02">
-                            Ayacucho 309 <br>
-                            mail <br>
-                            +54 3492 42-2971 <br>
-                        </div>
-                    <br>
-                    </p>
-                
-                <!-- Grid column -->
-                <div class="col text-center">
-                    <div class="col text-center">        
-                        <ul class="social-network social-circle">
-                            <li> 
-                                <a href="https://www.facebook.com/club9dejuliooficial" target="_blank" class="icoFacebook" title="Facebook">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/9dejuliooficial" target="_blank" class="icoTwitter" title="Twitter">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/club9dejuliooficial/?hl=es-la" target="_blank" class="icoGoogle" title="Linkedin">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://api.whatsapp.com/send/?phone=543492411074&text&app_absent=0" class="icoGoogle" title="Whatsapp Juliense">
-                                    <i class="fa fa-whatsapp"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="col text-center">
+                <div class="col text-center">        
+                    <ul class="social-network social-circle">
+                        <li> 
+                            <a href="https://www.facebook.com/club9dejuliooficial" target="_blank" class="icoFacebook" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/9dejuliooficial" target="_blank" class="icoTwitter" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/club9dejuliooficial/?hl=es-la" target="_blank" class="icoGoogle" title="Linkedin">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=543492325818&text&app_absent=0" target="_blank" class="icoGoogle" title="Whatsapp Juliense">
+                                <i class="fa fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
         </div>
-        <!-- Footer links -->
-    
-        <!-- Grid row -->
-        <div class="row d-flex align-items-center">
-            <!-- Grid column -->
-            <div class="col-md-7 col-lg-8">
-                <!--Copyright-->
-            </div>
-        </div>
-        <!-- Grid row -->
-        <!-- Footer Links -->
-        <p>Copyright 2021 &copy; 9 de Julio de Rafaela.</p>
-        Diseñado por <a class="desing" href="https://www.linkedin.com/in/pablo-saracco-58586b161/" target="_blank">Pablo Saracco</a>
-        </div>
-    </footer>
-    <!-- fin footer-->
         
-      
-    <!-- NO borres!! -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous">
-    </script>
+    </div>
+    <!-- Footer links -->
 
-    <!-- Mi JS -->
-    <script src="./js/archivo.js"></script>    
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
+            <!--Copyright-->
+        </div>
+    </div>
+    <!-- Grid row -->
+    <!-- Footer Links -->
+    <p>Copyright 2021 &copy; 9 de Julio de Rafaela.</p>
+    Diseñado por <a class="desing" href="https://www.linkedin.com/in/pablo-saracco-58586b161/" target="_blank">Pablo Saracco</a>
+    </div>
+</footer>
+<!-- fin footer-->
 
-    <!-- Hacia arriba-->
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <!-- Fin Hacia arriba-->
-    
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+     <!-- Hacia arriba-->
+   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+   <!-- Fin Hacia arriba-->
+   
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
-    <!-- opciones de la galeria -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-    <script src="js/script.js"></script>
+   <!-- opciones de la galeria-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+   <script src="js/script.js"></script>
+
+   <!-- Los card -->
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
