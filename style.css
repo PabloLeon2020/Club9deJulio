@@ -159,6 +159,7 @@
     text-align: center;
     background-color: #ebebebeb;
     margin: -24px 0;
+	padding-bottom: 1px;
 }
 
 /* ------------------------------------------------ El club ------------------------------------------------ */
@@ -170,6 +171,7 @@
     background-position: bottom;
     background-attachment: fixed;
     margin: -40px 0;    
+	padding-bottom: 20px;
 }
 
 /* ------------------------------------------------ Card Imagenes y Galeria ------------------------------------------------ */
@@ -544,6 +546,7 @@ input {
 	display: flex;
 	justify-content: center;
 	background-color: #d01125;
+	padding-bottom: 16px;
 }
 
 
