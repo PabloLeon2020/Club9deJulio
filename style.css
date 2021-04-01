@@ -34,14 +34,15 @@
 }
 
 /* ------------------------------------------------ Slider ------------------------------------------------ */
-.carousel {
-    height: 500px;
+/*Por si son imagenes de distinto tamaño*/
+/*.carousel {
+	height: 90px;
 }
 
 .carousel img {
-    height: 500px;
-    object-fit: cover;
-}
+    /*height: 500px;
+    object-fit: contain;
+}*/
 
 /* ------------------------------------------------ Socios ------------------------------------------------ */
 /* Maquina de escribir */
